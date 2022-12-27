@@ -1,0 +1,86 @@
+/*===== GRID LAYOUT =======================*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  display: -ms-grid;
+  -ms-grid-columns: 1fr [8];
+}
+
+/*.header , .space-container , .knowledge , .footer
+ * grid-column: 1/9
+ * -ms-grid-column: 1
+ * -ms-grid-column-span: 8*/
+/*========== COLORS ==========*/
+/*========== FONTS ==========*/
+/*========== LISTS ==========*/
+/*========== MIXINS ==========*/
+/*========== STYLES ==========*/
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  height: 100vh;
+  background-color: #0c2461;
+}
+.grid-container .calculator {
+  height: auto;
+  width: auto;
+  background-color: #b53471;
+  box-shadow: 0.2rem 0.2rem 2px 1px black;
+  border-radius: 5px;
+}
+.grid-container .calculator .display {
+  height: auto;
+  border: 0.3rem solid #833471;
+  background-color: #2d3436;
+  border-radius: 0.5rem;
+  margin: 1.5rem;
+}
+.grid-container .calculator .display .previous-value, .grid-container .calculator .display .current-value {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  -webkit-box-pack: flex-end;
+  -ms-flex-pack: flex-end;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  height: 2.5rem;
+  padding-right: 0.2rem;
+  font-size: 1.5rem;
+  color: white;
+}
+.grid-container .calculator .display .previous-value {
+  font-size: 2rem;
+}
+.grid-container .calculator .buttons-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  margin: 0.5rem 2rem;
+}
+.grid-container .calculator .buttons-row .button, .grid-container .calculator .buttons-row .button-2 {
+  box-shadow: 2px 2px 2px 1px black;
+  background-color: #833471;
+  border-radius: 3px;
+}
+.grid-container .calculator .buttons-row .button {
+  height: 3rem;
+  width: 3rem;
+}
+.grid-container .calculator .buttons-row .button-2 {
+  height: 3rem;
+  width: 6.2rem;
+}
+
+/*# sourceMappingURL=main.css.map */

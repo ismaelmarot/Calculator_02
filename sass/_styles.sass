@@ -1,0 +1,52 @@
+@forward '_variables'
+@forward '_mixins'
+
+@use '_variables' as var
+@use '_mixins' as mix
+
+/*========== STYLES ==========*/
+
+.grid-container
+     @include mix.flex-column (center,center)
+     height: 100vh
+     background-color: nth(var.$colors,7)
+     
+     .calculator
+         @include mix.setHeighWidth(auto,auto)
+         background-color: nth(var.$colors,4) 
+         box-shadow: .2rem .2rem 2px 1px nth(var.$colors,1)
+         border-radius: 5px  
+
+         .display
+             height: auto
+             border: .3rem solid nth(var.$colors,5)
+             background-color: nth(var.$colors,2)
+             border-radius: .5rem
+             margin: 1.5rem
+
+             .previous-value , .current-value
+                @include mix.flex-row (flex-end,center)
+                height: 2.5rem
+                padding-right: .2rem        
+                font-size: 1.5rem                  
+                color: white
+
+             .previous-value
+                 font-size: 2rem
+
+                
+         .buttons-row
+            @include mix.flex-row(center,center)
+            margin: .5rem 2rem
+
+            .button , .button-2
+                box-shadow: 2px 2px 2px 1px nth(var.$colors,1)
+                background-color: nth(var.$colors,5)
+                border-radius: 3px
+
+            .button
+                @include mix.setHeighWidth(3rem,3rem)    
+
+            .button-2
+                @include mix.setHeighWidth(3rem,6.2rem)
+              

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html version="1.0.0" lang="en">
+    <head><html lang="es-ES" xml:lang="es">
+        <meta charset="utf-8">
+        <meta name="author" content="Ismael Marot">
+        <meta name="copyright" content="Ismael Marot">
+        <meta name="url" content="">
+        <meta name="identifier-URL" content="">
+        <meta name="keywords" content="Ismael Marot Calculator"><!-- Keywords -->
+        <meta name="description" content="Ismael Marot Calculator"><!-- Summary content -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> <!-- responsive -->
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,700&family=Roboto:wght@300&display=swap" rel="stylesheet"><!-- fonts -->
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+         
+        <title>Calculator</title>
+    </head>
+<body class="grid-container">
+    <div class="calculator">
+        <div class="display">
+            <div class="previous-value" id="id-prev-value"></div>
+            <div class="current-value" id="id-curr-value"></div>
+        </div>
+        <div class="buttons-row">
+            <button class="button-2" onclick="display.deleteAllNumber()">C</button>
+            <button class="button" onclick="display.deleteNumber()">&larr;</button>
+            <button class="button operator" value="divide">%</button>
+        </div>
+        <div class="buttons-row">
+            <button class="button number">7</button>
+            <button class="button number">8</button>
+            <button class="button number">9</button>
+            <button class="button operator" value="multiply">x</button>
+        </div>
+        <div class="buttons-row">
+            <button class="button number">4</button>
+            <button class="button number">5</button>
+            <button class="button number">6</button>
+            <button class="button operator" value="substract">-</button>
+        </div>
+        <div class="buttons-row">
+            <button class="button number">1</button>
+            <button class="button number">2</button>
+            <button class="button number">3</button>
+            <button class="button operator" value="add">+</button>
+        </div>
+        <div class="buttons-row">
+            <button class="button-2 number">0</button>
+            <button class="button number">.</button>
+            <button class="button operator" value="equal">=</button>
+        </div>
+    </div>   
+    <script src="js/Display.js" type="text/javascript"></script>
+    <script src="js/Calculator.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
