@@ -13,5 +13,5 @@ A simple Calculator with the options for add, substract, multiply and divide.
 ------------
 #### SCREENSHOTS
 
-<p><img src="" align="centre" width="100%"/></p>
+<p><img src="https://github.com/ismaelmarot/Calculator_02/blob/master/img/calc_img_00.gif" align="centre" width="100%"/></p>
 ![CalculatorApp-capture](https://user-images.githubusercontent.com/43220852/209636962-d755904d-f72e-46f0-b3b7-7e27bdc8e5ed.jpg)
